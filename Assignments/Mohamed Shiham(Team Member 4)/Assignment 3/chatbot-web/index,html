@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot | Hospital</title>
+</head>
+<body style="background-color: gray;font-family: 'Courier New', Courier, monospace;">
+    <h1>Go Ahead and Click on the Icon the Chat Icon!</h1>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "5e5a7504-30e4-43d5-abc0-98e55ae1515f", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "625b5100-3281-4368-8068-d721131e6bcc", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
