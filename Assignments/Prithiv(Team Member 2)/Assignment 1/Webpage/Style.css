@@ -1,1 +1,78 @@
+.pic img{
+	margin-top: 40px;
+	margin-left: 150px;
+	height: 250px;
+	width: 250px;
+	border: 15px;
+	border-style: groove;
+	border-color: ghostwhite;
+	align-items: center;
+}
+.name{
+	margin-top: 50px;	
+}
+.name h2{
+	color: black;
+	text-align: center;
+	font-weight: 50;
+	font-family: Goudy Stout;
+	font-style: bold;
+}
+.name h4{
+	text-align: center;
+	font-family: Franklin Gothic Heavy;
+}
+.banner{
+	background-color: skyblue;
+}
+.info{
+	margin-left: 150px;
+	margin-top: 15px;
+}
+.info h4{
+	font-size: 35px;
+	font-family: Franklin Gothic Heavy;
+	font-weight: 50;
+}
+.info p{
+	text-align: justify;
+	font-size: 25px;
+	font-family: Franklin Gothic;
 
+}
+.detail{
+	/*margin-left: 130px;*/
+	margin-top: 15px;
+}
+.detail h4{
+	font-size: 35px;
+	font-family: Franklin Gothic Heavy;
+	font-weight: 50;
+}
+.detail p{
+	text-align: justify;
+	font-size: 20px;
+	font-family: Franklin Gothic;t
+}
+.prof{
+	margin-left: 150px;
+	margin-top: 15px;
+}
+.prof h4{
+	font-size: 35px;
+	font-family: Franklin Gothic Heavy;
+	font-weight: 50;
+}
+.prof p{
+	text-align: justify;
+	font-size: 25px;
+	font-family: Franklin Gothic;
+}
+.prof1{
+	margin-top: 65px;
+}
+.prof1 p{
+	text-align: justify;
+	font-size: 25px;
+	font-family: Franklin Gothic;
+}
