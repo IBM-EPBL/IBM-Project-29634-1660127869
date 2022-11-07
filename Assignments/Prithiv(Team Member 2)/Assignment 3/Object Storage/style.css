@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
