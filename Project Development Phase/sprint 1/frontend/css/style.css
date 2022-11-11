@@ -1,0 +1,11 @@
+#home-header{
+  background-color: var(--accent);
+  color: var(--primary);
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#home-header > ul{
+  display: flex;
+  justify-content: flex-end;
+}
