@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/account-forms.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <form class="acc-form">
+      <h3>Register</h3>
+      <div>
+        <label for="name">Name
+          <span class="required-input">*</span>
+        </label>
+        <input type="text" name="name" id="name" class="acc-input" required />
+      </div>
+      <div>
+        <label for="email">Email
+          <span class="required-input">*</span>
+        </label>
+        <input type="email" name="email" id="email" class="acc-input" required />
+      </div>
+      <div>
+        <label for="password">Password
+          <span class="required-input">*</span>
+        </label>
+        <input type="password" name="password" id="password" class="acc-input" required />
+      </div>
+      <div>
+        <label for="re-password">Re-password
+          <span class="required-input">*</span>
+        </label>
+        <input type="re-password" name="re-password" id="re-password" class="acc-input" required />
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <textarea id="address" class="acc-input" rows="3"></textarea>
+      </div>
+      <div>
+        <button type="submit" id="register-btn" class="btn acc-submit-btn">Register</button>
+        <p class="text-center">Already registered?
+          <a href="./login.html">Login</a>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
