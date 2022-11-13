@@ -1,0 +1,6 @@
+venv/
+.env
+.db_ssl.crt
+*.db
+__pycache__/
+archives/
