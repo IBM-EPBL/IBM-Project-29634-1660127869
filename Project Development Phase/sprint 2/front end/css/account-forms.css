@@ -1,0 +1,73 @@
+body {
+  background-image: linear-gradient(
+    to right top,
+    #f66b6b,
+    #f57b7d,
+    #f2989b,
+    #ebb3b7,
+    #e1ced0
+  );
+  display: grid;
+  place-items: center;
+}
+
+.acc-form {
+  width: min(90%, 500px);
+  margin: 2rem 0;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  box-shadow: 3px 3px 15px #00000020, -3px -2px 30px #00000020;
+}
+
+.acc-form > * {
+  margin: 0.75rem 0;
+}
+
+.acc-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  outline: none;
+  border: 2px solid #888;
+  margin-top: 0.5rem;
+}
+
+.acc-input:focus {
+  border-color: var(--accent);
+}
+
+.acc-submit-btn {
+  width: 100%;
+  margin: 1rem 0 2rem;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+}
+
+.acc-form a {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.acc-form a:hover,
+.acc-form a:focus {
+  color: var(--dark-ascent);
+  text-decoration: underline;
+}
+
+.acc-form > h3 {
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.required-input {
+  color: var(--accent);
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+textarea.acc-input {
+  resize: none;
+}
