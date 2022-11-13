@@ -1,0 +1,6 @@
+DB_URL='ibm_db_sa://fbt02364:SiRZkeXEtFMmmHVC@6667d8e9-9d4d-4ccb-ba32-21da3bb5aafc.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud:30376/bludb;SECURITY=SSL;SSLServerCertificate=.db_ssl.crt'
+APP_SETTINGS='config.DevelopmentConfig'
+FLASK_DEBUG=True
+API_VERSION_PREFIX='/api/v1/'
+SENDGRID_API_KEY='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'
+EMAIL_CONFIRMATION_SENDER_EMAIL ='kiranshrinivaas.19it@kct.ac.in'
