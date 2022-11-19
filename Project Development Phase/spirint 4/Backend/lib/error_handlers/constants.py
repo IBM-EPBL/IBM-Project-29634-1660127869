@@ -1,5 +1,0 @@
-TOKEN_EXPIRED = 'Token has expired.'
-FRESH_TOKEN_REQUIRED = 'Fresh token required.'
-TOKEN_REVOKED = 'Token has been revoked.'
-ERROR_LOADING_USER = 'Error loading the user.'
-CLAIM_VERIFICATION_FAILED = 'User claims verification failed.'
