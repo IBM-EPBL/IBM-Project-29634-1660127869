@@ -1,0 +1,7 @@
+ALREADY_EXISTS = 'Inventory record exists.'
+INVENTORY_RECORD_CREATED = 'Inventory record created successfully.'
+INVALID_DATA = 'Please check the data and try again.'
+ALL_INVENTORY_ITEMS = 'All inventory items for your request.'
+INVENTORY_ITEM = 'An Inventory item for the given id.'
+INVENTORY_ITEM_DELETED = 'Inventory item deleted successfully.'
+INVENTORY_ITEM_UPDATED = 'Inventory item successfully updated.'
