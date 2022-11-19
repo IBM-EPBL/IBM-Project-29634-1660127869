@@ -1,0 +1,6 @@
+LOCATION_CREATED = 'Location created successfully!'
+INVALID_DATA = 'Please check the location data and try again.'
+ALL_LOCATIONS = 'Locations of the current user.'
+LOCATION = 'Here is the location for your request.'
+LOCATION_UPDATED = 'Location updated successfully.'
+LOCATION_DELETED = 'Location deleted successfully.'
