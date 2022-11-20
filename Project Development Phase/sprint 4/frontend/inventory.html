@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/forms.css">
+  <link rel="stylesheet" href="./css/page-layout.css">
+  <link rel="stylesheet" href="./css/items.css">
+  <script src="https://kit.fontawesome.com/87e71d54fb.js" crossorigin="anonymous"></script>
+  <title>Inventory</title>
+</head>
+<body>
+  <header id="app-header">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./products.html">Products</a></li>
+      <li><a href="./locations.html">Locations</a></li>
+      <li class="curr-page"><a href="./inventory.html">Inventory</a></li>
+      <li><a href="./login.html">Logout</a></li>
+    </ul>
+  </header>
+  <main id="main-content">
+    <div class="text-right">
+      <button class="btn" id="form-toggle-btn">add inventory</button>
+    </div>
+    <div id="inventories" class="items-wrapper"></div>
+  </main>
+  <form class="add-item-form app-form center-modal d-none" id="add-inventory-form">
+    <h3 class="form-title">Add inventory</h3>
+    <select name="product_name" id="product-name" class="app-input" required>
+      <option value="" disabled selected>Choose any of the below product</option>
+    </select>
+    <select name="location_name" id="location-name" class="app-input" required>
+      <option value="" disabled selected>Choose any of the below location</option>
+    </select>
+    <input type="number" placeholder="quantity" id="quantity" name="quantity" class="app-input" required>
+    <input type="number" placeholder="threshold" id="threshold" name="threshold" class="app-input" required>
+    <button type="submit" class="btn app-submit-btn">Add</button>
+  </form>
+  <div class="message-box d-none"></div>
+  <div id="loader" class="d-none"></div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/modules/inventory/inventory.js" type="module"></script>
+</body>
+</html>

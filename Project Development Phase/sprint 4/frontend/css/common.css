@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #fff;
+  --secondary: #000;
+  --gray: #666;
+  --accent: #e26566;
+  --dark-accent: #eb5f62;
+  --success: rgb(64, 149, 64);
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.message-box {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 30%;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: var(--gray);
+  background-color: var(--primary);
+  font-weight: bold;
+  animation: pop-up .5s 1 forwards linear;
+}
+
+@keyframes pop-up {
+  to{
+    top: 5%;
+    left: 50%;
+  }
+}
+
+.message-box.success {
+  box-shadow: 1px 2px 5px var(--success);
+}
+
+.message-box.failed {
+  box-shadow: 1px 2px 5px var(--accent);
+}
+
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 8px solid var(--accent);
+  border-right-color: var(--gray);
+  border-top-color: var(--gray);
+  animation: spinner 1s infinite linear;
+  z-index: 100;
+}
+
+@keyframes spinner {
+  from {
+    transform: translate(-50%, -50%) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+.center-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.pt-0{
+  padding-top: 0 !important;
+}

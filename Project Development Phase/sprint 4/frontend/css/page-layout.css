@@ -1,0 +1,58 @@
+body {
+  min-height: 100vh;
+  font-size: 1.2rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body#auth-page{
+  background-image: linear-gradient(
+    to right top,
+    #f66b6b,
+    #f57b7d,
+    #f2989b,
+    #ebb3b7,
+    #e1ced0
+  );
+  display: grid;
+  place-items: center;
+}
+
+#auth-page .message-box{
+  background-color: #ffffff60;
+  top: 0%;
+  left: unset;
+  right: 0%;
+  transform: none;
+  animation: none;
+}
+
+#app-header{
+  background-color: var(--accent);
+  color: var(--primary);
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#app-header > ul{
+  display: flex;
+}
+
+#app-header li{
+  margin: 0rem .8rem;
+}
+
+#app-header li:hover{
+  text-decoration: underline;
+}
+
+#app-header .curr-page{
+  text-shadow: 1px 1px 1px #444;
+}
+
+#app-header li:last-of-type{
+  margin-left: auto;
+}
+
+#main-content{
+  padding:3rem 2rem;
+}

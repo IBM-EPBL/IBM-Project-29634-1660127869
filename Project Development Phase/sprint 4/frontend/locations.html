@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/forms.css">
+  <link rel="stylesheet" href="./css/page-layout.css">
+  <link rel="stylesheet" href="./css/items.css">
+  <script src="https://kit.fontawesome.com/87e71d54fb.js" crossorigin="anonymous"></script>
+  <title>Locations</title>
+</head>
+<body>
+  <header id="app-header">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./products.html">Products</a></li>
+      <li class="curr-page"><a href="./locations.html">Locations</a></li>
+      <li><a href="./inventory.html">Inventory</a></li>
+      <li><a href="./login.html">Logout</a></li>
+    </ul>
+  </header>
+  <main id="main-content">
+    <div class="text-right">
+      <button class="btn" id="form-toggle-btn">add location</button>
+    </div>
+    <div id="locations" class="items-wrapper"></div>
+  </main>
+  <form class="add-item-form app-form center-modal d-none" id="add-location-form">
+    <h3 class="form-title">Add Location</h3>
+    <input type="text" placeholder="name" id="location-name" name="name" class="app-input" required>
+    <input type="text" placeholder="address" id="location-address" name="address" class="app-input" required>
+    <button type="submit" class="btn app-submit-btn">Add</button>
+  </form>
+  <div class="message-box d-none"></div>
+  <div id="loader" class="d-none"></div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/modules/locations/locations.js" type="module"></script>
+</body>
+</html>

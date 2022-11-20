@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/forms.css" />
+  <link rel="stylesheet" href="./css/page-layout.css" />
+  <title>Register</title>
+</head>
+<body id="auth-page">
+  <form class="app-form" id="register-form">
+    <h3 class="form-title">Register</h3>
+    <div>
+      <label for="name">Name
+        <span class="required-input">*</span>
+      </label>
+      <input type="text" name="name" id="name" class="app-input" required />
+    </div>
+    <div>
+      <label for="email">Email
+        <span class="required-input">*</span>
+      </label>
+      <input type="email" name="email" id="email" class="app-input" required />
+    </div>
+    <div>
+      <label for="password">Password
+        <span class="required-input">*</span>
+      </label>
+      <input type="password" name="password" id="password" class="app-input" required />
+    </div>
+    <div>
+      <label for="re-password">Re-password
+        <span class="required-input">*</span>
+      </label>
+      <input type="password" name="re-password" id="re-password" class="app-input" required />
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <textarea id="address" name="address" class="app-input" rows="3" required></textarea>
+    </div>
+    <div>
+      <button type="submit" id="register-btn" class="btn app-submit-btn">Register</button>
+      <p class="text-center">Already registered?
+        <a href="./login.html">Login</a>
+      </p>
+    </div>
+  </form>
+  <div class="message-box d-none"></div>
+  <div id="loader" class="d-none"></div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/modules/auth/register.js" type="module"></script>
+</body>
+</html>
